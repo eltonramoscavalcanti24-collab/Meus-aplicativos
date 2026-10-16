@@ -1,0 +1,42 @@
+PLANTÃO MEMORÁVEL 2.0 — APLICATIVO (SEM BANCO CLÍNICO FINAL)
+
+CONTEÚDO
+index.html — aplicativo responsivo
+manifest.webmanifest — instalação PWA
+sw.js — cache offline da interface
+icon.svg — ícone
+
+INSTALAR NO IPHONE
+1. Extraia este ZIP no computador.
+2. Envie os quatro arquivos para a raiz de um repositório GitHub público.
+3. Ative Settings > Pages > Deploy from a branch > main / (root).
+4. Aguarde a publicação HTTPS e abra a URL no Safari do iPhone.
+5. Safari: Compartilhar > Adicionar à Tela de Início.
+6. Abra o aplicativo online pelo menos uma vez. Depois, a interface abre offline.
+
+TESTAR NO COMPUTADOR
+Na pasta extraída execute: python3 -m http.server 8000
+Abra http://localhost:8000
+
+IMPORTAR QUESTÕES
+Banco de questões > Escolher arquivo JSON > Importar JSON.
+Aceita os JSON legados com materia + etapas e o esquema v2 com questoes.
+O conteúdo das 32 matérias anteriores NÃO está incluído neste ZIP.
+O botão 'Carregar demonstração' adiciona seis questões de TESTE, não validadas.
+
+RECURSOS
+- Percursos TEMI e TEME
+- Questões curtas e de quatro alternativas
+- Revisão espaçada simples e confiança (100/80/50/25)
+- Simulado com feedback ao final
+- Desempenho por competência
+- Importação, exportação e backup/restauração
+- Armazenamento local IndexedDB e localStorage
+
+LIMITAÇÕES
+- O algoritmo de domínio é heurístico, não validado psicometricamente.
+- O modo curto compara respostas normalizadas, e pode requerer autoavaliação.
+- Sem imagens, simulador de ventilador, casos progressivos ou sincronização multi-dispositivo nesta primeira versão.
+- O simulado não replica os tempos ou pesos oficiais de editais.
+- Não é sistema de suporte à decisão clínica.
+- Faça backups periódicos; limpar dados do Safari pode excluir progresso.
